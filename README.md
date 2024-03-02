@@ -14,4 +14,4 @@ A simple JavaFX application that fetches and displays weather information for a 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/aynsky/weatherapp.git
+https://github.com/aynsky/Weather-App-GUI.git
