@@ -1,0 +1,50 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+.root {
+    -fx-background-color: #ffffff; /* Use your preferred color code */
+    
+}
+
+.pane{
+	-fx-background-color: #ffffff;
+	-fx-alignment: center;
+	-fx-background-radius: 10 10 10 10;
+	-fx-background-insets: 2px;
+	-fx-border-color: black; /* Specify your desired border color */
+    -fx-border-width: 2px; /* Specify your desired border width */
+
+}
+
+
+.text1 {
+   
+    -fx-font-family: "Caveat", cursive;
+    -fx-font-size: 80.0;
+    
+}
+
+.text2 {
+   
+    -fx-font-family: "Caveat", cursive;
+}
+
+#textlocation1{
+	
+}
+
+#textHumidity{
+	
+}
+
+#textwindspeed{
+	
+}
+
+#Errortext{
+	-fx-text-fill: #FF0000;
+}
+
+

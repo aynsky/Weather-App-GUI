@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Your FXML file -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+    <children>
+        <TextField fx:id="cityTextField" layoutX="97.0" layoutY="33.0" prefHeight="26.0" prefWidth="171.0" />
+        <Button fx:id="btn" layoutX="279.0" layoutY="34.0" onAction="#handleButtonClick" text="Find" />
+      <Text fx:id="text1" layoutX="26.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Text>
+      <Text fx:id="text2" fill="BLACK" layoutX="26.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Segoe Print" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="text3" fill="BLACK" layoutX="258.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="120.8203125">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+      </Text>
+      <Pane fx:id="pane" layoutX="8.0" layoutY="236.0" prefHeight="282.0" prefWidth="369.0" styleClass="pane" stylesheets="@application.css">
+         <children>
+            <ImageView fx:id="image1" fitHeight="60.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/location.png" />
+               </image></ImageView>
+            <ImageView fx:id="image2" fitHeight="60.0" fitWidth="79.0" layoutX="191.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/humidity.png" />
+               </image></ImageView>
+            <ImageView fx:id="image3" fitHeight="60.0" fitWidth="79.0" layoutX="14.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/windspeed.png" />
+               </image></ImageView>
+            <Text fx:id="textlocation" layoutX="100.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+            <Text fx:id="textlocation1" layoutX="100.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="288.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity" />
+            <Text fx:id="textHumidity" layoutX="288.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Text>
+            <Text layoutX="103.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wind Speed" />
+            <Text fx:id="textwindspeed" layoutX="103.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Text fx:id="displayins" layoutX="115.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please provide the city name.">
+         <font>
+            <Font name="Century Gothic" size="10.0" />
+         </font></Text>
+      <Text fx:id="Errortext" layoutX="68.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="264.79998779296875" fill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Text>
+      <Text layoutX="92.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather data provided by OpenWeatherMap">
+         <font>
+            <Font name="Bookman Old Style" size="10.0" />
+         </font>
+      </Text>
+    
+
+      
+	
+    </children>
+</AnchorPane>
